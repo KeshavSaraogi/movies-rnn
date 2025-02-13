@@ -1,6 +1,6 @@
 # Core ML and Streamlit dependencies
-tensorflow==2.15.0
-keras==2.15.0
+tensorflow==2.16.0
+keras==3.8.0
 tensorflow-io-gcs-filesystem==0.37.1
 h5py==3.10.0
 
@@ -23,5 +23,3 @@ requests==2.32.3
 protobuf==4.25.6
 joblib==1.4.2
 pillow==11.1.0
-
-
