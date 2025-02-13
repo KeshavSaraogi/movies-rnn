@@ -1,5 +1,5 @@
 # Core ML and Streamlit dependencies
-tensorflow==2.16.0
+tensorflow==2.17.1
 keras==3.8.0
 tensorflow-io-gcs-filesystem==0.37.1
 h5py==3.10.0
