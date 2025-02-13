@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.datasets import imdb
@@ -13,6 +14,7 @@ wordIndex = imdb.get_word_index()
 reverseWordIndex = {value: key for key, value in wordIndex.items()}
 
 # Load the updated model
+model_path = os.path.abspath("simpleRNN-IMDB-v2.h5")
 model = load_model("simpleRNN-IMDB-v2.h5")
 
 # Function To Decode Reviews
