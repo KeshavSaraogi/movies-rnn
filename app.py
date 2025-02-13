@@ -13,7 +13,7 @@ wordIndex = imdb.get_word_index()
 reverseWordIndex = {value: key for key, value in wordIndex.items()}
 
 # load the model
-model = load_model('simpleRNN-IMDB.h5')
+model = load_model('simpleRNN-IMDB.h5', safe_mode = False)
 
 # Function To Decode Reviews
 def decodeReviews(encodedReview): 
