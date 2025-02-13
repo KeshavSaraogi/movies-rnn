@@ -15,7 +15,7 @@ reverseWordIndex = {value: key for key, value in wordIndex.items()}
 
 # Load the updated model
 model_path = os.path.abspath("simpleRNN-IMDB-v2.h5")
-model = load_model("simpleRNN-IMDB-v2.h5")
+model = load_model("updated_model.keras")
 
 # Function To Decode Reviews
 def decodeReviews(encodedReview): 
