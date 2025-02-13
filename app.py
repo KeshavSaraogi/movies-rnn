@@ -12,8 +12,8 @@ maxLength = 500
 wordIndex = imdb.get_word_index()
 reverseWordIndex = {value: key for key, value in wordIndex.items()}
 
-# load the model
-model = load_model('simpleRNN-IMDB.h5', safe_mode = False)
+# Load the updated model
+model = load_model("simpleRNN-IMDB-v2.h5")
 
 # Function To Decode Reviews
 def decodeReviews(encodedReview): 
@@ -33,9 +33,7 @@ def predictSentiment(review):
     sentiment = 'Positive' if prediction[0][0] > 0.5 else 'Negative'
     return sentiment, prediction[0][0]
 
-
 # Streamlit Application
-
 st.title("IMDB Movie Review Sentiment Analysis")
 st.write("Enter a Movie Review to classify as Positive or Negative")
 
